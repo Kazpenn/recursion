@@ -3,4 +3,38 @@
 /build/
 /build/classes/java/main/
 /build/classes/java/test/
-.idea
+/.idea/
+### IntelliJ/Android Studio ###
+# - metadata
+*.iml
+# - temporary files
+/captures/
+# - build output
+/out/
+### Eclipse ###
+# - metadata
+/.settings/
+.project
+.classpath
+# - build output
+/bin/
+### Gradle ###
+# - temporary files
+# - local properties
+local.properties
+# - build output
+### Maven ###
+# - build output
+/target/
+### Derby ###
+# - data directory
+# DON'T FORGET to add database directory to this in Spring Data projects!
+# - log file
+derby.log
+### Floobits ###
+# - metadata
+.floo
+.flooignore
+### OS X ###
+# - metadata
+.DS_Store

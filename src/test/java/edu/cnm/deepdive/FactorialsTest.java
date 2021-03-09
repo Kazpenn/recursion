@@ -17,10 +17,10 @@ class FactorialsTest {
   }
 
   @DisplayName("computeRecursive(exceptions)")
-  @ParameterizedTest(name = "[{index}] Asserting computeRecursive({0}) throws IllegalArgumentException.")
+  @ParameterizedTest(name = "[{index}] Asserting computeRecursive({0}) throws {1}.")
   @CsvFileSource(resources = "factorials-test-exception.csv", numLinesToSkip = 1)
-  void computeRecursive_exception(int n) {
-    assertThrows(IllegalArgumentException.class, () -> Factorials.computeRecursive(n));
+  void computeRecursive_exception(int n, Class<? extends Throwable> expectedException) {
+    assertThrows(expectedException, () -> Factorials.computeRecursive(n));
   }
 
 }
